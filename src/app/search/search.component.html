@@ -1,0 +1,39 @@
+<section ngClass="search-section">
+    <div ngClass="search-box">
+        <input [(ngModel)] = "inputText" 
+        id=""
+        type="text"
+        ngClass="input"
+        placeholder="Search for your film" 
+        (keyup.enter)="search()"
+        />
+    </div>
+
+    <div ngClass="list-box">
+            <ul *ngFor="let item of filmsApi">
+            <li><img ngClass="image"src="https://image.tmdb.org/t/p/original{{item.poster_path}}"></li>
+            <div ngClass="items"> 
+                <li ngClass="items__title">{{item.title}}</li>
+                <li ngClass="items__date">({{item.release_date|date:"yyyy"}})</li>
+            </div>
+            <div ngClass="vote-container">
+                <li ngClass="vote">{{item.vote_average}}</li>
+                <span class="material-symbols-outlined star">star</span>
+            </div>
+        </ul>
+    </div>
+
+    <div>
+        <ul *ngFor="let item of seriesApi">
+            <li><img ngClass="image"src="https://image.tmdb.org/t/p/original{{item.poster_path}}"></li>
+                <div ngClass="items"> 
+                    <li ngClass="items__title">{{item.title}}</li>
+                    <li ngClass="items__date">({{item.release_date|date:"yyyy"}})</li>
+                </div>
+                <div ngClass="vote-container">
+                    <li ngClass="vote">{{item.vote_average}}</li>
+                    <span class="material-symbols-outlined star">star</span>
+                </div>
+        </ul>
+    </div>
+</section>

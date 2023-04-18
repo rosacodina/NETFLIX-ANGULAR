@@ -1,0 +1,43 @@
+<header ngClass="header">
+
+        <nav ngClass="nav">
+            <div ngClass="logo">
+                <img ngClass="logo__icon" src="../../assets/images/hacker.PNG">
+            </div>   
+
+            <div ngClass="business">
+                <h3 ngClass="business__department">smartUp Xperience</h3> 
+                <p ngClass="business__name"> by Sopra Steria</p>
+            </div>
+            <div ngClass="hamburger-box">
+                <button class="material-symbols-outlined hamburger-icon" (click)="clickedMenu()">
+                    <span>menu</span>
+                </button>
+            </div>
+        </nav>
+
+        <div [ngClass]="{'hidden': !activated, 'showed': activated}"
+        [ngClass]="{'close-window': !menuWindow, 'open-window': menuWindow}">
+            <div ngClass="button-box">
+                <button ngClass="close__icon" (click)="closeMenu()" >
+                    x
+                </button>
+             
+            </div>
+             
+            <div>
+                <nav> 
+                    <ol class="menu" >
+                        <li><a>Inicio</a></li>
+                        <li><a>Buscador</a></li>
+                        <li><a>Series TV</a> </li>
+                        <li><a>Películas</a></li>
+                        <li><a>Mi lista</a></li>
+                        <li><a>Mi perfil</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    
+
+</header>

@@ -1,0 +1,133 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 65px;
+}
+
+.logo{
+    width: 115px;
+}
+    .logo__icon{
+        padding: 12.5px 8px 12.5px 75px;
+        width: 35px;
+        height: 40px;
+    }
+
+
+.business{
+    display: flex;
+    flex-direction: column;
+    width: 81px;
+}
+    .business__department{
+        width: 81px;
+        margin: 10px 0px 1px 0px ;
+        color: white;
+    }
+
+    .business__name{
+        font-size: 5px;
+        margin: 0px;
+        text-align: right;
+        color: white;
+}
+
+
+
+/*HAMBUGER MENU*/
+.hamburger-box{
+    display: flex;
+    flex-direction: row;
+    margin-left: 75%;
+    background-color: black;
+    width: 750px;
+}
+
+.hamburger-icon {
+    background-color: black;
+    color: white;
+    width: px;
+    height: 65px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: none;
+}
+
+
+/*HIDDEN MENU*/
+
+.button-box{
+    padding-left: 81%;
+    padding-top: 8%;
+}
+
+    .close__icon{
+        width: 50px;
+        height: 50px;
+        color: black;
+        background-color: white;
+        border-radius: 50%;
+        border: 1px solid white;
+}
+
+
+.menu{
+    list-style: none;
+    color: rgb(178, 171, 171);
+    font-size:larger;
+    width: 150px;
+    padding-top: 150px;
+    padding-left: 550px;
+}
+
+li{
+    padding-bottom: 15px;
+    font-size: larger;
+}
+
+
+
+ .hidden{
+    position: relative;
+    background-color: black;
+    color:white;
+    display: none;
+}
+
+.showed{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.826) ;
+    list-style: none;
+    width: 100vw;
+    height: 100vw;
+    text-align: center;
+    font-size: larger;
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+}
+
+.close-window{
+    display: block;
+}
+.open-window{
+    display: none;
+}
+
+
+
+
+
+

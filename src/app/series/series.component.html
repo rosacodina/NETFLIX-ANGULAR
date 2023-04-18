@@ -1,0 +1,25 @@
+<section ngClass="series">
+    <div>
+        <h1>Series</h1>
+    </div>
+    <div ngClass="list">
+        <ul  *ngFor="let item of series">
+            <li><img ngClass="image"src="https://image.tmdb.org/t/p/original{{item.poster_path}}"></li>
+            <div ngClass="items"> 
+                <li ngClass="items__title">{{item.name}}</li>
+                <li ngClass="items__date">({{item.first_air_date|date:"yyyy"}})</li>
+            </div>
+            <div ngClass="vote-container">
+                <li ngClass="vote">{{item.vote_average}}</li>
+                
+                    <span class="material-symbols-outlined star">
+                    star
+                    </span>
+                
+            </div>
+        </ul>
+    </div>
+</section>
+
+
+
