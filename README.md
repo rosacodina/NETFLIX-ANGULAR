@@ -9,7 +9,7 @@
       ```<ng version>```
 
     In case you have some errors, type this command:
-      ```<npm audit fix --force>````
+      npm audit fix --force
   
   3- To ensure you have everything installed, type:
       ```<npm install>```
