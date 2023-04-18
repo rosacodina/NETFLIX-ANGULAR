@@ -3,19 +3,19 @@
 
 ## Getting start:
   1- Install Angular CLI by typing the following command in your IDE's terminal:
-    npm install -g @angular/cli
+    *  npm install -g @angular/cli
 
   2- Ensure you have installed correctly by seeing your local version with this command:
-    ng version
+    *  ng version
 
-    *In case you have some errors, type this command:
-      npm audit fix --force
+    In case you have some errors, type this command:
+      *  npm audit fix --force
   
   3- To ensure you have everything installed, type:
-      npm install
+      *  npm install
   
   4- Launch the project:
-      ng serve
+      *  ng serve
 
 ## Development server:
   Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
